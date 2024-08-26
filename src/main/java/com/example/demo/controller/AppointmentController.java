@@ -50,7 +50,7 @@ public class AppointmentController {
                 appointment.setEmployeeId(employee.getId());
                 Employee employee1 = employeeService.getEmployeeById(employee.getId()).orElseThrow(() -> new RuntimeException("Employee not found"));
                 employee1.setNumberofappointment(employee1.getNumberofappointment() + 1);
-                employeeService.createEmployee(employee);
+                employeeService.updateEmployee(employee);
 
                 return ResponseEntity.ok(appointmentService.createAppointment(appointment));
             }
