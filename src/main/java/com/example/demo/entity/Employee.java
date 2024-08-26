@@ -12,6 +12,16 @@ public class Employee {
     private long id;
 
     private String name;
+    private int numberofappointment;
+
+    public int getNumberofappointment() {
+        return numberofappointment;
+    }
+
+    public void setNumberofappointment(int numberofappointment) {
+        this.numberofappointment = numberofappointment;
+    }
+
 
     public long getId() {
         return id;
